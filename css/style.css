@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif; /* 폰트는 상황에 맞게 변경하세요 */
+}
+
+
+.first .container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+/* 중앙 로고 및 아이콘 영역 */
+.first .center-logo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.first .center-logo h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.first .chicken-icon {
+    width: 180px; /* 아이콘 크기 조절 */
+    display: block;
+    margin: 0 auto;
+}
+
+/* 섹션 공통 스타일 */
+.first .section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 배경색 분할 */
+.first .brand {
+    background-color: #ff9d42; /* 왼쪽 밝은 주황 */
+}
+
+.first .franchise {
+    background-color: #f16522; /* 오른쪽 진한 주황 */
+}
+
+/* 흰색 비정형 배경 (달걀 모양) */
+.first .content-box {
+    background-color: white;
+    padding: 40px 40px;
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 유기적인 모양을 만드는 border-radius */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.first .brand .content-box {
+    /* 좌상, 우상, 우하, 좌하 / 세로축 조절 */
+    border-radius: 43% 57% 41% 59% / 54% 43% 57% 46%;
+}
+
+/* 오른쪽 창업문의 영역의 달걀 모양 */
+.first .franchise .content-box {
+    /* 조금 더 세로로 길쭉하거나 찌그러진 느낌 */
+    border-radius: 54% 46% 54% 46% / 37% 59% 41% 63%;
+}
+
+
+.first .content-box h2 {
+    color: #f16522;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.first .content-box p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    word-break: keep-all;
+}
+
+/* 노란색 버튼 */
+.first .btn {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px; 
+    height: 100px;
+    background-color: #ffea00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.2; 
+    border-radius: 50%; 
+    
+    transition: transform 0.2s;
+}
+
+.first .btn:hover {
+    transform: scale(1.1);
+}
+
+.main .section1{width: 100%; height: 100vh; position: relative; 
+    overflow: hidden;}
+
+.main header {position:absolute; width: 100%; z-index: 10;height: 35px;display: flex;justify-content: space-between;
+    align-items: center;left: 0;top: 0;box-sizing: border-box;margin-top: 50px;}
+.main header h1{margin-left: 30px;height: 35px;width: 140px;display: flex;align-items: center;}
+.main header h1 a{}
+
+
+.main header nav{width: 750px;position: relative;}
+.main header nav .gnb {display: flex;justify-content: space-evenly;align-items: center;}
+.main header nav .gnb li {font-size: 20px;}
+.main header nav .gnb li a {color: #fff;display: block;}
+
+
+.main header .hd_btn {width: 127px;display: flex;justify-content: center;align-items: center;margin-right: 30px; gap: 10px;}
+.main header .hd_btn .lang{font-size: 20px;color: #fff;font-weight: 500;}
+.main header .hd_btn .search{width: 35px;height: 35px;}
+.main header .hd_btn .search img{width: 100%;}
+
+.main .hero img{width: 100vw; height: 100vh; position: relative; 
+    overflow: hidden;object-fit: cover;}
+.main .textloop2 {position: absolute;bottom: 300px;}
+.main .textloop2 ul {display: flex;white-space: nowrap;font-size: 70px;letter-spacing: -2px;background: rgba(255,255,255,0.3);
+color: #000;position: absolute;padding: 10px;}
+.main .textloop2 ul li {padding: 0 20px;}
+
+.main .textloop2 ul.a {transform: rotate(7deg);background: rgba(255,255,255,0);color: #fff;border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;}
+/* .main .textloop2 ul.b {transform: rotate(-7deg);top:-135px;} */
+.main .textloop2 ul.b {transform: rotate(7deg);top:-135px;}
+
+
+.main .textloop2 ul.a li{animation: textloop 7s linear infinite;}
+.main .textloop2 ul.b li{animation: textloop2 7s linear infinite;}
+
+
+@keyframes textloop {
+    0%{transform: translate3d(0%,0,0);}
+    100%{transform: translate3d(-100%,0,0);}
+}
+
+@keyframes textloop2{
+    0% {transform:translate3d(-100%,0,0);}
+    100% {transform:translate3d(0,0,0);}
+}
+
+
+.section2 {height: 250vh;position: relative;background: #000;}
+.section2 .imgbox{width: 1000px;position: absolute;left: 50%;
+    width: 500px;transform: translateX(-50%);top:3%;perspective: 1500px;text-align: center;height: 500px;height: 500px;;}
+.section2 .imgbox img {width: 100%;}
+/* --- Section 3: BEST MENU (Slide Version) --- */
+
+.section3 {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #f16522; /* 깐부 주황색 */
+    color: #fff;
+    overflow: hidden; /* 슬라이드 시 화면 밖 아이템 숨김 필수 */
+    position: relative;
+    height: 100vh;
+}
+
+.section3 .inner {
+    width: 100%; /* 슬라이드 영역 확보를 위해 전체 너비 사용 */
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* 타이틀 영역: 왼쪽 정렬 및 하단 선 */
+.section3 .title_area {
+    width: calc(100% - 200px); /* 좌우 여백 고려 */
+    margin: 0 auto 80px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 30px;
+}
+
+.section3 .title_area h2 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.8;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent; /* 테두리만 있는 KKANBU */
+    letter-spacing: -2px;
+}
+
+.section3 .title_area h3 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 15px;
+    letter-spacing: -1px;
+}
+
+/* 메뉴 리스트: 가로로 길게 배치하여 슬라이드 준비 */
+.section3 .menu_list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px; /* 아이템 사이 간격 */
+    width: max-content; /* 컨텐츠 길이에 맞게 너비 자동 확장 */
+    padding-left: 100px; /* 초기 시작 위치 여백 */
+    will-change: transform; /* 애니메이션 성능 최적화 */
+}
+
+.section3 .menu_list li {
+    width: 400px; /* 메뉴 카드 너비 */
+    height: 400px; /* 메뉴 카드 너비 */
+
+    flex-shrink: 0; /* 너비 고정 */
+    text-align: center;
+    list-style: none;}

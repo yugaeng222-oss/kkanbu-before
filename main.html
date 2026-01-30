@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main">
+    <section class="section1">
+    <header>
+        <h1><a href="#">KKANBU</a></h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><span>ABOUT</span></a></li>
+                <li><a href="#"><span>EXPERTISE</span></a></li>
+                <li><a href="#"><span>CASE</span></a></li>
+                <li><a href="#"><span>NEWS</span></a></li>
+                <li><a href="sub2.html">CONTACT</a></li>
+            </ul>
+            <div class="lnb_bg"></div>
+        </nav>
+
+        <div class="hd_btn">
+            <div class="lang">
+                KR
+            </div>
+            <div class="search">
+                <img src="images/Search.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="images/unnamed (1).jpg" alt="">
+         <strong>ONSIDE</strong>   
+    </div>
+
+     <div class="textloop2">
+            <ul class="a">
+                <li>portfolio ulux process</li>
+                <li>portfolio ulux process</li>
+                <li>portfolio ulux process</li>
+                <li>portfolio ulux process</li>
+            </ul>
+
+             <ul class="b">
+                <li>portfolio ulux process</li>
+                <li>portfolio ulux process</li>
+                <li>portfolio ulux process</li>
+                <li>portfolio ulux process</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section2">
+     <div class="imgbox">
+                <img src="images/love.jpg" alt="">
+            </div>
+    </section>
+
+    <section class="section3">
+    <div class="inner">
+        <div class="title_area">
+            <h2>KKANBU</h2>
+            <h3>BEST MENU</h3>
+        </div>
+        
+        <ul class="menu_list">
+            <li>
+                <div class="img_wrap">
+                    <img src="images/love.jpg" alt="빠삭커리네치킨">
+                </div>
+                <h4>빠삭커리네치킨</h4>
+                <p>바삭한 커리 코코넛 후레이크가 듬뿍!</p>
+            </li>
+            <li>
+                <div class="img_wrap">
+                    <img src="images/love.jpg" alt="숯불 핫 바베큐구이">
+                </div>
+                <h4>숯불 핫 바베큐구이</h4>
+                <p>깐부치킨 전기구이 신메뉴</p>
+            </li>
+            <li>
+                <div class="img_wrap">
+                    <img src="images/love.jpg" alt="마늘간장 크런치윙봉">
+                </div>
+                <h4>마늘간장 크런치윙봉</h4>
+                <p>마늘간장소스를 입힌 크런치윙봉</p>
+            </li>
+        </ul>
+    </div>
+</section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script>
+ gsap.registerPlugin(ScrollTrigger);
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger:'.section2 .imgbox',
+            start:'60% 50%',
+            end:'150%',
+            scrub:1,
+            pin:true,
+            markers:true
+        }
+    })
+    .fromTo('.section2 .imgbox img', {'transform':'rotateY(-40deg) rotateX(50deg)', 'width':'50%','opacity':0.2},
+                                   {'transform':'rotateY(0deg) rotateX(0deg)', 'width':'100%','opacity':1},0)  
+    
+    // 기존 script 태그 하단에 교체
+gsap.registerPlugin(ScrollTrigger);
+
+// 1. 타이틀 영역 애니메이션 (기존 유지)
+gsap.from(".section3 .title_area", {
+    scrollTrigger: {
+        trigger: ".section3",
+        start: "top 80%",
+    },
+    x: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+});
+
+// 2. 메뉴 슬라이드 애니메이션 (오른쪽에서 왼쪽으로)
+gsap.from(".section3 .menu_list li", {
+    scrollTrigger: {
+        trigger: ".section3",
+        start: "top 70%", // 섹션이 화면에 보이기 시작하면
+        end: "bottom 20%",
+        scrub: 2, // 스크롤 속도에 맞춰 부드럽게 움직임 (숫자가 클수록 더 부드러움)
+    },
+    x: 500, // 오른쪽 500px 지점에서 시작
+    opacity: 0,
+    stagger: 0.1, // 각 아이템이 약간의 시차를 두고 출발
+    ease: "none"
+});
+    </script>                               
+</html>
