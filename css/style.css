@@ -8,7 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pretendard', sans-serif; /* 폰트는 상황에 맞게 변경하세요 */
+    font-family: 'Pretendard', sans-serif;
+    /* 폰트는 상황에 맞게 변경하세요 */
 }
 
 
@@ -33,11 +34,12 @@
     font-size: 3rem;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    font-style: italic;
+    font-family: 'MungyeongGamhongApple', sans-serif;
 }
 
 .first .chicken-icon {
-    width: 180px; /* 아이콘 크기 조절 */
+    width: 180px;
+    /* 아이콘 크기 조절 */
     display: block;
     margin: 0 auto;
 }
@@ -52,11 +54,13 @@
 
 /* 배경색 분할 */
 .first .brand {
-    background-color: #ff9d42; /* 왼쪽 밝은 주황 */
+    background-color: #ff9d42;
+    /* 왼쪽 밝은 주황 */
 }
 
 .first .franchise {
-    background-color: #f16522; /* 오른쪽 진한 주황 */
+    background-color: #f16522;
+    /* 오른쪽 진한 주황 */
 }
 
 /* 흰색 비정형 배경 (달걀 모양) */
@@ -71,7 +75,7 @@
     justify-content: center;
     align-items: center;
     /* 유기적인 모양을 만드는 border-radius */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .first .brand .content-box {
@@ -103,21 +107,21 @@
 
 /* 노란색 버튼 */
 .first .btn {
- 
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100px; 
+    width: 100px;
     height: 100px;
     background-color: #ffea00;
     color: #333;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
-    line-height: 1.2; 
-    border-radius: 50%; 
-    
+    line-height: 1.2;
+    border-radius: 50%;
+
     transition: transform 0.2s;
 }
 
@@ -125,82 +129,338 @@
     transform: scale(1.1);
 }
 
-.main .section1{width: 100%; height: 100vh; position: relative; 
-    overflow: hidden;}
+.main .section1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
 
-.main header {position:absolute; width: 100%; z-index: 10;height: 35px;display: flex;justify-content: space-between;
-    align-items: center;left: 0;top: 0;box-sizing: border-box;margin-top: 50px;}
-.main header h1{margin-left: 30px;height: 35px;width: 140px;display: flex;align-items: center;}
-.main header h1 a{}
+.main header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.main header h1 {
+    margin-left: 30px;
+    height: 35px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+     font-family: 'MungyeongGamhongApple', sans-serif;
+}
+
+.main header h1 a {
+    color: #fff;
+}
 
 
-.main header nav{width: 750px;position: relative;}
-.main header nav .gnb {display: flex;justify-content: space-evenly;align-items: center;}
-.main header nav .gnb li {font-size: 20px;}
-.main header nav .gnb li a {color: #fff;display: block;}
+.main header nav {
+    width: 750px;
+    position: relative;
+}
+
+.main header nav .gnb {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main header nav .gnb li {
+    font-size: 20px;
+}
+
+.main header nav .gnb li a {
+    color: #fff;
+    display: block;
+}
 
 
-.main header .hd_btn {width: 127px;display: flex;justify-content: center;align-items: center;margin-right: 30px; gap: 10px;}
-.main header .hd_btn .lang{font-size: 20px;color: #fff;font-weight: 500;}
-.main header .hd_btn .search{width: 35px;height: 35px;}
-.main header .hd_btn .search img{width: 100%;}
+.main .hero {
+    position: relative;
+}
 
-.main .hero img{width: 100vw; height: 100vh; position: relative; 
-    overflow: hidden;object-fit: cover;}
-.main .textloop2 {position: absolute;bottom: 300px;}
-.main .textloop2 ul {display: flex;white-space: nowrap;font-size: 70px;letter-spacing: -2px;background: rgba(255,255,255,0.3);
-color: #000;position: absolute;padding: 10px;}
-.main .textloop2 ul li {padding: 0 20px;}
+.main .hero img {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+}
 
-.main .textloop2 ul.a {transform: rotate(7deg);background: rgba(255,255,255,0);color: #fff;border-top: 1px solid #fff;
-border-bottom: 1px solid #fff;}
+.main .hero .another {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    z-index: 20;
+}
+
+.main .hero .another img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main .textloop2 {
+    position: absolute;
+    top: 30%;
+    /* 전체적인 높이 조절 */
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(-16deg);
+    /* 부모를 통째로 회전 */
+    width: 180%;
+    /* 회전 시 모서리가 비지 않도록 충분히 넓게 */
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 왼쪽 정렬 */
+    pointer-events: none;
+}
+
+/* 2. 공통 ul 스타일 */
+.main .textloop2 ul {
+    display: flex;
+    white-space: nowrap;
+    font-size: 110px;
+    letter-spacing: -5px;
+    margin: 0;
+    /* 마진 초기화 */
+    padding: 0;
+    width: 100%;
+}
+
+.main .textloop2 ul li {
+    padding: 0 40px;
+    font-weight: 900;
+}
+
+/* .main .textloop2 ul.a {transform: rotate(7deg);color: #FFB600;font-weight: bold;}
+/* .main .textloop2 ul.a {transform: rotate(7deg);background: rgba(255,255,255,0);color: #fff;border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;} */
 /* .main .textloop2 ul.b {transform: rotate(-7deg);top:-135px;} */
-.main .textloop2 ul.b {transform: rotate(7deg);top:-135px;}
+/* .main .textloop2 ul.b {transform: rotate(7deg);top:-135px;color: #fff;font-weight: bold;top:-135px;}
+.main .textloop2 ul.c {transform: rotate(7deg);color: #FFB600;font-weight: bold;} */
 
+/* 첫 번째 줄: 노란색 */
+/* 첫 번째 줄 (a): 전체 가로지름 */
+.main .textloop2 ul.a {
+    color: #FFB600;
+    z-index: 3;
+}
 
-.main .textloop2 ul.a li{animation: textloop 7s linear infinite;}
-.main .textloop2 ul.b li{animation: textloop2 7s linear infinite;}
+/* 두 번째 줄 (b): 왼쪽에서만 보임 */
+.main .textloop2 ul.b {
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+    z-index: 2;
+    /* 핵심: 너비를 제한하고 넘치는 글자 숨김 */
+    /* max-width: 55%;  */
+    overflow: hidden;
+}
+
+/* 세 번째 줄 (c): 왼쪽에서만 보임 */
+.main .textloop2 ul.c {
+    color: #FFB600;
+    z-index: 1;
+
+    /* 핵심: 너비를 제한하고 넘치는 글자 숨김 */
+    /* max-width: 50%;  */
+    overflow: hidden;
+}
+
+.main .textloop2 ul.a li {
+    animation: textloop 12s linear infinite;
+}
+
+.main .textloop2 ul.b li {
+    animation: textloop2 12s linear infinite;
+}
+
+.main .textloop2 ul.c li {
+    animation: textloop 12s linear infinite;
+}
 
 
 @keyframes textloop {
-    0%{transform: translate3d(0%,0,0);}
-    100%{transform: translate3d(-100%,0,0);}
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
 }
 
-@keyframes textloop2{
-    0% {transform:translate3d(-100%,0,0);}
-    100% {transform:translate3d(0,0,0);}
+@keyframes textloop2 {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 
-.section2 {height: 250vh;position: relative;background: #000;}
-.section2 .imgbox{width: 1000px;position: absolute;left: 50%;
-    width: 500px;transform: translateX(-50%);top:3%;perspective: 1500px;text-align: center;height: 500px;height: 500px;;}
-.section2 .imgbox img {width: 100%;}
+/* .section2 {
+    height: 250vh;
+    position: relative;
+    background: #000;
+}
+
+.section2 .imgbox {
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    transform: translateX(-50%);
+    top: 3%;
+    perspective: 1500px;
+    text-align: center;
+    height: 500px;
+    height: 500px;
+    ;
+}
+
+.section2 .imgbox img {
+    width: 100%;
+} */
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    /* 스크롤 거리를 확보하기 위해 높게 설정 */
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2 .inner {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    /* 화면에 고정된 채로 애니메이션 진행 */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble_tip {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: block;
+}
+
+
+/* 중앙 영상: 처음엔 작고 투명함 */
+.section2 .center_video {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.5);
+    /* 작게 시작 */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.section2 .center_video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* 텍스트 컨테이너: 영상 위에 위치 */
+.section2 .text_container {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .text_line {
+    font-size: 150px;
+    font-weight: 900;
+    color: #331b14;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: -20px 0;
+}
+
+.section2 .inline_img {
+    width: 200px;
+    height: 130px;
+    margin: 0 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section2 .inline_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 말풍선 */
+.section2 .bubble_tip {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    background: #331b14;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    z-index: 20;
+}
+
+
 /* --- Section 3: BEST MENU (Slide Version) --- */
 
 .section3 {
     width: 100%;
     padding: 120px 0;
-    background-color: #f16522; /* 깐부 주황색 */
+    background-color: #EE7338;
+    /* 깐부 주황색 */
     color: #fff;
-    overflow: hidden; /* 슬라이드 시 화면 밖 아이템 숨김 필수 */
+    overflow: hidden;
+    /* 슬라이드 시 화면 밖 아이템 숨김 필수 */
     position: relative;
     height: 100vh;
 }
 
 .section3 .inner {
-    width: 100%; /* 슬라이드 영역 확보를 위해 전체 너비 사용 */
+    width: 100%;
+    /* 슬라이드 영역 확보를 위해 전체 너비 사용 */
     max-width: 1920px;
     margin: 0 auto;
 }
 
 /* 타이틀 영역: 왼쪽 정렬 및 하단 선 */
+/* 타이틀 영역: 흰색 줄이 화면 끝까지 가도록 설정 */
 .section3 .title_area {
-    width: calc(100% - 200px); /* 좌우 여백 고려 */
-    margin: 0 auto 80px;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 30px;
+    width: 100%;
+    /* 너비를 100%로 변경 */
+    /* 하단 줄 */
+    padding: 40px 100px;
+    /* 좌우 여백을 주어 텍스트 위치 조절 */
+    box-sizing: border-box;
 }
 
 .section3 .title_area h2 {
@@ -208,7 +468,8 @@ border-bottom: 1px solid #fff;}
     font-weight: 900;
     line-height: 0.8;
     -webkit-text-stroke: 1px #fff;
-    color: transparent; /* 테두리만 있는 KKANBU */
+    color: transparent;
+    /* 테두리만 있는 KKANBU */
     letter-spacing: -2px;
 }
 
@@ -220,19 +481,1180 @@ border-bottom: 1px solid #fff;}
 }
 
 /* 메뉴 리스트: 가로로 길게 배치하여 슬라이드 준비 */
+/* --- Section 3: BEST MENU 리스트 교정 --- */
+
 .section3 .menu_list {
+    border-top: 4px solid #fff;
     display: flex;
-    justify-content: flex-start;
-    gap: 80px; /* 아이템 사이 간격 */
-    width: max-content; /* 컨텐츠 길이에 맞게 너비 자동 확장 */
-    padding-left: 100px; /* 초기 시작 위치 여백 */
-    will-change: transform; /* 애니메이션 성능 최적화 */
+    justify-content: center;
+    /* 아이템들을 중앙으로 모음 */
+    align-items: center;
+    gap: 50px;
+    /* 치킨 사이의 간격 */
+    width: 100%;
+    padding: 0 10%;
+    /* 양옆 여백을 주어 너무 퍼지지 않게 함 */
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .section3 .menu_list li {
-    width: 400px; /* 메뉴 카드 너비 */
-    height: 400px; /* 메뉴 카드 너비 */
-
-    flex-shrink: 0; /* 너비 고정 */
+    /* 너비를 30% 내외로 설정하여 한 화면에 3개가 들어오게 합니다 */
+    width: 30%;
+    max-width: 400px;
+    /* 최대 크기를 제한하여 너무 커지는 것 방지 */
+    flex-shrink: 0;
     text-align: center;
-    list-style: none;}
+    list-style: none;
+}
+
+/* 이미지 박스: 정방향(정사각형) 유지 */
+.section3 .img_wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* 1:1 비율 고정 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.section3 .img_wrap img {
+    /* 이미지가 너무 커보인다면 80~90% 정도로 조절하세요 */
+    width: 90%;
+    height: 90%;
+    /* 치킨 모양이 잘리지 않고 다 보여야 하므로 contain 사용 */
+    object-fit: contain;
+}
+
+/* 텍스트 크기도 이미지에 맞춰 조정 */
+.section3 .menu_list h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.section3 .menu_list p {
+    font-size: 0.9rem;
+    word-break: keep-all;
+    /* 한글 줄바꿈 예쁘게 */
+}
+
+.section3 .inner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 4px solid #fff;
+    height: 50px;
+}
+
+/* 섹션 전체 설정 */
+/* 섹션 전체를 한 화면에 고정 */
+.section4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    /* 스크롤바 제거 */
+    display: flex;
+    align-items: center;
+
+}
+
+.section4 .bottom_content {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    gap: 30px;
+    /* 텍스트와 이미지 사이 적절한 간격 */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section4 .left_text {
+    flex: 0.8;
+    display: flex;
+    justify-content: start;
+    /* 텍스트 영역 비중 살짝 축소 */
+}
+
+.section4 .left_text h2 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #3e2116;
+    line-height: 1.1;
+}
+
+/* 이미지 영역이 화면 높이를 가득 채우도록 설정 */
+.section4 .right_images {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+    /* 상하단 살짝 여백 */
+}
+
+
+.section4 .right_images::before {
+    content: "";
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+}
+
+.section4 .right_images::after {
+    content: "";
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+}
+
+.section4 .img_col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    /* 카드 사이 간격을 줄여 공백 최소화 */
+}
+
+
+.section4 .img_box {
+    width: 100%;
+    /* 파란색 공백을 줄이기 위해 높이를 화면에 맞춰 최적화 */
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #F1EADB;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.section4 .img_box img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Section 5 Style --- */
+.section5 {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.section5 .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 상단 2단 박스 */
+.section5 .top_content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.section5 .notice_box,
+.section5 .event_main {
+    flex: 1;
+    height: 300px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.section5 .notice_box h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.section5 .notice_box ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.section5 .notice_box ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.section5 .notice_box ul li span {
+    color: #999;
+}
+
+.section5 .event_main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section5 .event_main h2 {
+    color: #e91e63;
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.section5 .event_main .event_date {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* 하단 배너 및 카드 영역 */
+.section5 .bottom_banner {
+    background-color: #ffb142;
+    /* 주황색 배경 */
+    border-radius: 30px;
+    padding: 60px 40px;
+    position: relative;
+}
+
+.section5 .banner_intro {
+    margin-bottom: 50px;
+}
+
+.section5 .banner_intro p {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section5 .btn_login {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #ffb142;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 카드 리스트 - 정방향 이미지 */
+.section5 .card_list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    /* 내용이 많을 경우 가로 스크롤 가능 */
+    padding-bottom: 20px;
+    /* IE 및 Edge를 위한 스크롤바 숨김 */
+    -ms-overflow-style: none;
+    /* Firefox를 위한 스크롤바 숨김 */
+    scrollbar-width: none;
+}
+
+/* Chrome, Safari, Opera를 위한 스크롤바 숨김 */
+.section5 .card_list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.section5 .card_list li {
+    flex: 0 0 250px;
+    /* 카드 너비 고정 */
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    list-style: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section5 .card_img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* ★ 이미지를 정방향으로 고정 */
+}
+
+.section5 .card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ★ 정방향 박스에 이미지 꽉 채움 */
+}
+
+.section5 .card_txt {
+    padding: 20px;
+}
+
+.section5 .card_txt .tag {
+    color: #ff5252;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.section5 .card_txt strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.section5 .card_txt span {
+    font-size: 12px;
+    color: #999;
+}
+
+/* --- Section 6: Search Store --- */
+.section6 {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    /* 배경 상단 녹색, 하단 빨간색 분할 */
+    background: url(../images/SEARCH.png) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to bottom, #FEA948 40%, #EE7338 60%); */
+}
+
+.section6::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #000;
+    opacity: 0.3;
+}
+
+.section6 .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 검색 텍스트 및 입력창 */
+.section6 .search_area {
+    text-align: center;
+    z-index: 5;
+    margin-bottom: -50px;
+    /* 치킨 이미지와 살짝 겹치게 */
+}
+
+.section6 .search_area h2 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -2px;
+}
+
+.section6 .search_area p {
+    font-size: 18px;
+    color: #ffb142;
+    /* 강조색 */
+    margin-top: 10px;
+}
+
+.section6 .search_box {
+    margin-top: 30px;
+    position: relative;
+    width: 500px;
+    display: inline-block;
+}
+
+.section6 .search_box input {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section6 .search_box button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* 중앙 치킨 이미지 */
+.section6 .main_visual {
+    width: 800px;
+    z-index: 2;
+}
+
+.section6 .main_visual img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.4));
+}
+
+/* 우측 하단 플로팅 버튼 */
+.section6 .floating_wrap {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.section6 .floating_wrap a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.section6 .btn_startup {
+    background: #ffb142;
+    color: #333;
+}
+
+.section6 .btn_call {
+    background: #054429;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.section6 .floating_wrap a:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Section 7: Franchise Recruitment --- */
+/* --- Section 7: Franchise Recruitment --- */
+.section7 {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+.section7 .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    gap: 80px;
+    /* 이미지와 텍스트 사이 간격 */
+    padding: 0 50px;
+}
+
+.section7 .store_visual {
+    flex: 1.1;
+    aspect-ratio: 4 / 3;
+    /* 박스 비율 설정 */
+    overflow: hidden;
+    /* 넘치는 이미지 커트 */
+    border-radius: 40px;
+    /* 둥근 모서리 */
+}
+
+.section7 .store_visual img {
+    width: 100%;
+    height: 100%;
+    /* 부모의 4:3 비율에 맞게 높이 꽉 채움 */
+    object-fit: cover;
+    /* 비율 유지하며 꽉 채우기 (핵심!) */
+    display: block;
+}
+
+/* 오른쪽 콘텐츠 영역 */
+/* 부모 영역 설정 보완 */
+.section7 .info_content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; 를 제거하거나 stretch로 두면 align-self가 작동합니다. */
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.section7 .text_wrap {
+    flex-shrink: 0;
+    /* 텍스트가 찌그러지지 않게 */
+}
+
+.section7 .text_wrap .sub_title {
+    color: #e01b22;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.section7 .text_wrap h2 {
+    font-size: 70px;
+    /* 더 크고 선명하게 */
+    line-height: 1.1;
+    color: #1a1a1a;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.section7 .text_wrap p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* 자세히 보기 버튼 */
+.section7 .btn_more {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 45px;
+    background-color: #33211b;
+    color: #fff;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.section7 .btn_more:hover {
+    background-color: #FEA948;
+    transform: translateY(-5px);
+}
+
+
+.section7 .highlight_card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #FEA948;
+    border-radius: 40px;
+    padding: 45px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* 내부 텍스트 세로 중앙 */
+    color: #fff;
+    z-index: 2;
+
+    /* ★ 핵심: 부모(.info_content)가 가로 배치(flex-direction: row)일 때 
+       이 요소만 바닥에 붙도록 설정합니다. */
+    align-self: flex-end;
+}
+
+.section7 .highlight_card strong {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 900;
+    display: block;
+}
+
+/* 카드 배경 회전 원형 텍스트 보정 */
+.section7 .rotating_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 정확히 카드의 정중앙 뒤에 배치 */
+    width: 450px;
+    /* 카드보다 크게 */
+    height: 450px;
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    /* 실제 회전 텍스트를 구현하려면 SVG나 별도의 라이브러리가 필요하지만, 
+       이미지 느낌을 내기 위해 크기와 위치를 잡았습니다. */
+}
+
+footer {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #f8f8f8;
+    /* 연한 회색 배경 */
+    border-top: 1px solid #e7e7e7;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+footer .inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 상단 레이아웃 */
+footer .footer_top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer .footer_logo {
+    margin-right: 50px;
+    height: 30px;
+    filter: grayscale(1);
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+footer .footer_inquiry {
+    flex: 1;
+}
+
+footer .footer_inquiry p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+footer .footer_inquiry strong {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .footer_sns {
+    display: flex;
+    gap: 15px;
+}
+
+footer .footer_sns img {
+    width: 35px;
+    height: 35px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+footer .footer_sns img:hover {
+    opacity: 1;
+}
+
+/* 약관 메뉴 */
+footer .footer_policy {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+footer .footer_policy ul {
+    display: flex;
+    gap: 25px;
+}
+
+footer .footer_policy ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+footer .footer_policy .color_yellow {
+    color: #f16522 !important;
+}
+
+/* 포인트 컬러 */
+
+/* 기업 상세 정보 */
+footer .footer_info p {
+    margin-bottom: 4px;
+}
+
+footer .footer_info span {
+    margin-right: 15px;
+    position: relative;
+}
+
+footer .footer_info span b {
+    color: #333;
+}
+
+/* 정보 사이의 구분선 (|) */
+footer .footer_info span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+footer .footer_info .copy {
+    display: block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #999;
+    font-weight: bold;
+}
+
+
+/* sub1 시작 */
+
+/* 기본 레이아웃 */
+.sub1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sub1 .header {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sub1 .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+   
+}
+
+.sub1 .header-inner .logo { font-family: 'MungyeongGamhongApple', sans-serif;
+    font-size: 28px;font-weight: normal;}
+
+/* 메인 메뉴(GNB) */
+.sub1 .nav {
+    height: 100%;
+}
+
+.sub1 .gnb {
+    display: flex;
+    height: 100%;
+}
+
+.sub1 .gnb-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.sub1 .gnb-item>a {
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sub1 .gnb-item>a.active,
+.sub1 .gnb-item:hover>a {
+    color: #ff9d42
+}
+
+/* 하위 메뉴(LNB) - 기본 숨김 */
+.sub1 .lnb {
+    position: absolute;
+    top: 100px;
+    /* 헤더 높이만큼 아래로 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    /* 평소에는 숨김 */
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.sub1 .lnb li a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sub1 .lnb li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* 마우스 올렸을 때 나타나는 효과 */
+.sub1 .gnb-item:hover .lnb {
+    display: flex;
+    /* 마우스 올리면 가로로 정렬하여 표시 */
+}
+
+/* 상단 우측 버튼 스타일 */
+.sub1 .top-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.sub1 .btn-yellow {
+    background: #ff9d42;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #442d1e;
+}
+
+.sub1 .btn-gray {
+    background: #e8ebee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Banner */
+.sub1 .banner {
+    width: 100%;
+    height: 300px;
+    background: #ff9d42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sub1 .banner-title {
+    font-size: 3.5rem;      /* 한글은 영문보다 살짝 작게 조절하는 게 예뻐요 */
+    letter-spacing: -3px;   /* 글자 사이 간격을 좁히면 훨씬 전문적인 디자인 느낌! */
+    font-weight: 800;       /* 묵직한 정성을 표현하기 위해 두껍게 */
+    line-height: 1.2; 
+    color: #fff;
+    font-family: 'YFavorite';
+}
+
+.sub1 .banner-text {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Main Content */
+.sub1 .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sub1 .main-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+/* Tabs */
+.sub1 .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.sub1 .tabs li {
+    cursor: pointer;
+    color: #999;
+    font-weight: bold;
+}
+
+.sub1 .tabs li.active {
+    color: #333;
+    border-bottom: 3px solid #ff9d42;
+}
+
+/* Product Grid */
+.sub1 .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.sub1 .product-card {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #f9f9f9;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.sub1 .product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sub1 .badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sub1 .img-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sub1 .product-card h4 {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+}
+
+.sub1 .options {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Footer */
+.sub1 .footer {
+    background: #332b26;
+    color: #999;
+    padding: 50px 0;
+    margin-top: 100px;
+    font-size: 0.8rem;
+}
+
+.sub1 .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sub1 .footer-info p {
+    margin: 5px 0;
+}
+
+/* 모바일 반응형 (768px 미만 화면) */
+@media screen and (max-width: 768px) {
+    /* [기본 레이아웃 및 헤더] */
+    .first .container { flex-direction: column; height: auto; min-height: 100vh; position: relative; }
+    .first .center-logo { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; width: 100%; pointer-events: none; }
+    .first .center-logo h1 { font-size: 2rem; text-shadow: 0 4px 10px rgba(0,0,0,0.2); font-family: 'MungyeongGamhongApple', sans-serif; }
+    .first .chicken-icon { width: 100px; }
+    .first .section { flex: none; width: 100%; height: 50vh; display: flex; justify-content: center; align-items: center; }
+    .first .content-box { width: 280px; height: 280px; padding: 20px; }
+    .first .content-box h2 { font-size: 1.5rem; margin-bottom: 5px; }
+    .first .content-box p { font-size: 0.85rem; margin-bottom: 15px; }
+    .first .btn { width: 60px; height: 60px; font-size: 0.75rem; }
+
+    .main header { margin-top: 0; height: 60px; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+    .main header h1 { margin-left: 0; z-index: 101; }
+    header nav { display: none; }
+    .top-btns{display: none;}
+    .menu-toggle { display: flex !important; position: relative; z-index: 1000; }
+
+    /* [Section 1] */
+    .main .hero .another { width: 100%; left: 50%; top: 40%; }
+    .main .textloop2 ul { font-size: 50px; }
+
+    /* [Section 2] 글자와 영상 겹치기 및 배경 처리 */
+    .section2 {
+        height: 100vh !important;
+        overflow: hidden;
+        background-color: #fff;
+        position: relative;
+    }
+    .section2 .inner { position: relative; height: 100%; width: 100%; }
+
+    /* 팁: 영상이 나올 때도 보여야 하므로 가장 위에 배치 */
+    .section2 .bubble_tip {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+        z-index: 40; /* 최상단 */
+        padding: 5px 15px;
+        border-radius: 20px;
+        word-break: keep-all;
+        border: 1px solid #eee;
+    }
+
+    /* 텍스트 컨테이너: JS에서 애니메이션 종료 후 opacity: 0 처리 필수 */
+    .section2 .text_container {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; /* 영상 가림용 */
+        z-index: 30; /* 영상보다 위 */
+        pointer-events: none; /* 클릭 방해 금지 */
+        transition: opacity 0.5s ease, visibility 0.5s;
+        
+    }
+
+    /* 영상: 텍스트 컨테이너가 사라져야 보임 */
+    .section2 .center_video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) !important;
+        width: 90%;
+        height: 50vw;
+        z-index: 1; /* 텍스트 아래 */
+        border-radius: 15px;
+        overflow: hidden;
+        opacity: 1 !important; /* 모바일에서 강제 노출 */
+        visibility: visible !important;
+    }
+
+    .center_video iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: auto; /* 영상은 다시 터치 가능하게 */
+}
+    .section2 .text_line { font-size: 32px; display: flex; align-items: center; justify-content: center; margin: 5px 0; background: #fff; }
+    .section2 .inline_img { width: 60px; height: 40px; margin: 0 10px; }
+
+    /* [Section 3] 베스트 메뉴: 크기 대폭 축소 */
+    .section3 { padding: 50px 0; height: auto !important; }
+    .section3 .title_area { padding: 0 20px 20px; text-align: left; }
+    .section3 .title_area h2 { font-size: 40px; }
+    .section3 .title_area h3 { font-size: 38px; }
+    .section3 .menu_list { flex-direction: column; padding: 30px 20px; gap: 35px; }
+    .section3 .menu_list li { width: 100%; text-align: center; }
+    .section3 .img_wrap { width: 180px; height: 180px; margin: 0 auto; }
+    .section3 .menu_list h4 { font-size: 1.1rem; margin-top: 15px; }
+    .section3 .menu_list p { font-size: 0.85rem; }
+
+    /* [Section 4-7 동일] */
+    .section4 { padding: 40px 0; height: auto !important; }
+    .section4 .bottom_content { flex-direction: column; }
+    .section4 .left_text h2 { font-size: 28px; text-align: center; }
+    .section4 .right_images { height: 280px; width: 100%; }
+
+    .section5 .top_content { flex-direction: column; padding: 0 20px; }
+    .section5 .notice_box, .section5 .event_main { width: 100%; height: auto; padding: 30px 20px; }
+    .section5 .event_main h2 { font-size: 28px; }
+
+    .section6 { height: 50vh; }
+    .section6 .search_area h2 { font-size: 30px; }
+    .section6 .search_box { width: 90%; }
+    .section6 .floating_wrap { display: none !important; }
+
+    .section7 .inner { flex-direction: column; padding: 0 20px; gap: 30px; }
+    .section7 .store_visual { width: 100%; order: 1; }
+    .section7 .info_content { width: 100%; display: flex; order: 2; }
+    .section7 .text_wrap h2 { font-size: 36px; }
+    .section7 .highlight_card { width: 100%; height: auto; padding: 40px 20px; margin-top: 20px; align-self: center; }
+    .section7 .highlight_card strong { font-size: 20px; line-height: 1.4; }
+    .section7 .rotating_text { display: none; }
+
+    .sub1 .nav, 
+    .sub1 .top-btns {
+        display: none !important; 
+    }
+
+    /* 2. 햄버거 버튼(menu-toggle)이 흰색 배경에서 안 보일 수 있으니 색상을 잡아줍니다. */
+    .sub1 .menu-toggle .bar {
+        background-color: #333; /* sub1 헤더가 밝은색이므로 막대기를 어둡게 */
+    }
+
+    /* 3. 로고 사이즈 조정 (선택사항) */
+    .sub1 .header-inner .logo {
+        font-size: 20px;
+    }
+
+    .sub1 .banner {
+        height: 250px; 
+    }
+
+    /* 상단 작은 텍스트 */
+    .sub1 .banner-text {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    /* 메인 타이틀 폰트 사이즈 (핵심) */
+    .sub1 .banner-title {
+        font-size: 2.2rem;   /* 영문은 길기 때문에 4rem에서 2.2rem 정도로 확 줄여야 안 깨집니다 */
+        line-height: 1.1;    /* 줄 간격을 좁혀서 응집력 있게 */
+        letter-spacing: -1px; /* 영문은 너무 붙이면 읽기 힘드니 살짝만 */
+        word-break: keep-all; /* 단어가 중간에 끊기지 않게 */
+    }
+}
+
+
+.menu-toggle {
+  display: none;
+  width: 31px;
+  height: 31px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* 클릭되어 active 클래스가 붙었을 때의 모양 */
+.main .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.main .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0; /* 가운데 줄은 사라짐 */
+}
+
+.main .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
